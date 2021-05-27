@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         message.focus();
 
         send.onclick = () => {
-                list.innerHTML += `<option>Me: ${message.value}</option`;
+                option = `<option>Me: ${message.value}</option>`;
+                list.innerHTML += option;
                 message.value='';
         }
 
